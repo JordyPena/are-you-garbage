@@ -1,6 +1,6 @@
 import '../top-nav/TopNav.css';
 import banner from "../../images/banner.jpg";
-const Topnav= () => {
+const Topnav = () => {
   return (
     <header data-testid="header">
       <img src={banner} alt="two men" className="banner" />
