@@ -13,7 +13,7 @@
 .menuNav {
   overflow-y: scroll;
   position: fixed;
-  background: rgba(255, 217, 0, 0.616);
+  background-color: black;
   left: -150px;
   width: 0;
   overflow: hidden;
@@ -24,7 +24,7 @@
 }
 
 .close {
-  color: black;
+  color: white;
   position: relative;
   top: 5px;
   left: 350px;
@@ -46,4 +46,21 @@ li span {
 .menuItems {
   position: relative;
   left: 130px;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+}
+
+a:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+a:active {
+  color: yellow;
 }
