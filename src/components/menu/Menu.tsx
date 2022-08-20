@@ -4,6 +4,7 @@ import { FaHome, FaPatreon, FaYoutube, FaTshirt } from "react-icons/fa";
 import { BsFillStarFill } from "react-icons/bs";
 import { GiTicket } from "react-icons/gi";
 import { useState } from "react";
+import { Link } from 'react-router-dom';
 import "../menu/Menu.css";
 const Menu = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -23,28 +24,40 @@ const Menu = () => {
         <div className="menuItems">
           <ul>
             <li>
-              <FaHome size="25px" />
-              <span>Home</span>
+              <Link to="/" style={{textDecoration: 'none'}}>
+                <FaHome size="25px" />
+                <span>Home</span>
+              </Link>
             </li>
             <li>
-              <BsFillStarFill size="25px" />
-              <span>Special</span>
+              <Link to="/special" style={{textDecoration: 'none'}}>
+                <BsFillStarFill size="25px" />
+                <span>Special</span>
+              </Link>
             </li>
             <li>
-              <GiTicket size="25px" />
-              <span>Live Shows</span>
+              <Link to="/liveShows" style={{textDecoration: 'none'}}>
+                <GiTicket size="25px" />
+                <span>Live Shows</span>
+              </Link>
             </li>
             <li>
-              <FaPatreon size="25px" />
-              <span>Patreon</span>
+              <a target="_blank" href="https://www.patreon.com/AreYouGarbage">
+                <FaPatreon size="25px" />
+                <span>Patreon</span>
+              </a>
             </li>
             <li>
-              <FaYoutube size="25px" />
-              <span>Youtube</span>
+              <a target="_blank" href="https://www.youtube.com/c/AreYouGarbageComedyPodcast/featured">
+                <FaYoutube size="25px" />
+                <span>Youtube</span>
+              </a>
             </li>
             <li>
-              <FaTshirt size="25px" />
-              <span>Merch</span>
+              <a target="_blank" href='https://www.bonfire.com/store/are-you-garbage/'>
+                <FaTshirt size="25px" />
+                <span>Merch</span>
+              </a>
             </li>
           </ul>
         </div>
