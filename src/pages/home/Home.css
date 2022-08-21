@@ -1,34 +1,46 @@
 iframe {
   border: none;
   border-radius: 30px;
+  padding-top: 50px;
 }
 
 .iframe-Container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #626262;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  background-color: black;
 }
 
 .title {
-  color: rgba(255, 217, 0);
-  font-size: 25px;
-  margin: 10px 0 0 0;
+  color: #DFB98E;
+  margin: 30px 0 50px 0;
+  font-size: 35px;
 }
 
 .subtitle {
-  color: white;
+  color: black;
   margin: 10px 0 0 0;
   font-size: 35px;
+}
+
+.title-two {
+  color: black;
+  font-size: 25px;
+  margin: 130px 0 0 0;
 }
 
 .listen-section-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #626262;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.link-background {
+  box-shadow: rgb(0 0 0) 0px 30px 60px -12px inset, rgb(0 0 0) 0px 18px 36px -18px inset;
+  background-image: url("https://i.pinimg.com/originals/df/68/b8/df68b84e4d8b1c7890deaca9c9e86f5a.png");
+  background-repeat: no-repeat, repeat;
+  background-position: center;
+  background-size: 200%;
 }
 
 .platform-link-styles {
@@ -49,4 +61,36 @@ iframe {
 
 .platform-link-container figure {
   margin: 16px 60px 16px 60px; 
+}
+
+.fire:before {
+  content: '';
+  position: absolute;
+  top: 52px;
+  left: 0;
+  width: 100%;
+  height: 208px;
+  background: url('/public/images/fire.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.wave {
+  position: absolute;
+  top: 600px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.wave svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 190px;
+}
+
+.wave .shape-fill {
+  fill: black;
 }
