@@ -1,4 +1,5 @@
 import Menu from "../../components/menu/Menu";
+import Footer from "../../components/footer/Footer";
 import "../home/Home.css";
 const Home = () => {
   return (
@@ -88,6 +89,7 @@ const Home = () => {
         </div>
       </section>
       <section className="fire"></section>
+      <Footer />
     </>
   );
 };
