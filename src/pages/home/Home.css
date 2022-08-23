@@ -13,34 +13,33 @@ iframe {
 
 .title {
   color: #DFB98E;
-  margin: 30px 0 50px 0;
+  margin: 30px 0 0 0;
   font-size: 35px;
 }
 
 .subtitle {
-  color: black;
+  color: white;
   margin: 10px 0 0 0;
-  font-size: 35px;
+  font-size: 22px;
 }
 
 .title-two {
   color: black;
   font-size: 25px;
-  margin: 130px 0 0 0;
+  margin: 170px 0 0 0;
+  
+}
+
+.title-three {
+  color: white;
+  font-size: 25px;
+  margin: 25px 0 0 0;
 }
 
 .listen-section-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.link-background {
-  box-shadow: rgb(0 0 0) 0px 30px 60px -12px inset, rgb(0 0 0) 0px 18px 36px -18px inset;
-  background-image: url("https://i.pinimg.com/originals/df/68/b8/df68b84e4d8b1c7890deaca9c9e86f5a.png");
-  background-repeat: no-repeat, repeat;
-  background-position: center;
-  background-size: 200%;
 }
 
 .platform-link-styles {
@@ -51,8 +50,10 @@ iframe {
 .platform-link-container {
   display: flex;
   flex-direction: column;
-  margin: 0;
+  margin: 20px 0 0 0;
   align-items: center;
+  background-color: black;
+  box-shadow: rgb(17 17 26 / 10%) 0px 4px 16px, rgb(17 17 26 / 10%) 0px 8px 24px, rgb(17 17 26 / 10%) 0px 16px 56px;
 }
 
 .platform-link-container a {
@@ -63,21 +64,9 @@ iframe {
   margin: 16px 60px 16px 60px; 
 }
 
-.fire:before {
-  content: '';
-  position: absolute;
-  top: 52px;
-  left: 0;
-  width: 100%;
-  height: 208px;
-  background: url('/public/images/fire.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
 .wave {
   position: absolute;
-  top: 600px;
+  top: 554px;
   left: 0;
   width: 100%;
   overflow: hidden;
@@ -93,4 +82,80 @@ iframe {
 
 .wave .shape-fill {
   fill: black;
+}
+
+.disclosure-text {
+  font-size: 10px;
+}
+
+.live-shows-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.liveshows-card-container {
+  width: 90%;
+  height: 640px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.726);
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+.card-top-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.venue {
+  font-size: 25px;
+  margin: 10px 0 10px 0;
+  color: black;
+}
+
+.venue-location-row {
+  display: flex;
+}
+
+.city, .state {
+  font-size: 25px;
+  margin: 0;
+}
+
+.show-date-row {
+  display: flex;
+}
+
+.show-date-text {
+  font-size: 25px;
+  margin: 5px;
+  color: black;
+}
+
+.buy-tickets {
+  background-color: darkgrey;
+  border: none;
+  font-size: 15px;
+  border-radius: 5px;
+  padding: 5px 10px 5px 10px;
+}
+
+.buy-tickets:hover, .card-bottom-btn-styles:hover {
+  background-color: #dfb98e65;
+}
+
+.card-bottom {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0 0 0;
+}
+
+.card-bottom-btn-styles {
+  border-radius: 5px;
+  border: none;
+  background-color: darkgrey;
+  color: white;
+  padding: 5px 10px 5px 10px;
+  font-size: 20px;
 }
