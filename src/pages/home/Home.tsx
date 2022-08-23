@@ -1,6 +1,24 @@
 import Menu from "../../components/menu/Menu";
+import Footer from "../../components/footer/Footer";
+import { ShowsData } from "../../data/Shows";
+import { show } from "../../types/Types";
 import "../home/Home.css";
+import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 const Home = () => {
+  const [shows, setShows] = useState<Array<show>>([]);
+  let navigate = useNavigate();
+
+  useEffect(() => {
+    const result = ShowsData.filter((show: show) => {
+      return show.id < 5;
+    });
+    setShows(result);
+  }, []);
+
+  const moreShows = () => {
+    navigate("/liveshows");
+  };
   return (
     <>
       <Menu />
@@ -26,11 +44,47 @@ const Home = () => {
           </svg>
         </div>
       </section>
+      <section className="live-shows-container">
+        <h2 className="title-two">See Are You Garbage Live!</h2>
+        <h4 className="disclosure-text">
+          Dates are subject to change & venue website may not have listed dates
+          posted
+        </h4>
+        <div className="liveshows-card-container">
+          {shows.map((show) => {
+            return (
+              <div className="card-top-section">
+                <h4 className="venue">{show.venue}</h4>
+                <div className="venue-location-row">
+                  <p className="city">{show.city},</p>
+                  <p className="state">{show.state}</p>
+                </div>
+                <div className="show-date-row">
+                  <p className="show-date-text">{show.dddd}</p>
+                  <p className="show-date-text">{show.month}</p>
+                  <p className="show-date-text">{show.dd}</p>
+                </div>
+                <a className="buy-tickets" href={show.url} target="_blank">
+                    Buy Tickets
+                  </a>  
+              </div>
+            );
+          })}
+          <div className="card-bottom">
+            <button
+              className="card-bottom-btn-styles"
+              onClick={() => moreShows()}
+            >
+              More Shows
+            </button>
+          </div>
+        </div>
+      </section>
       <section className="listen-section-container">
-        <h3 className="title-two">Are You Garbage</h3>
-        <h2 className="subtitle">Show available on</h2>
         <div className="platform-link-container">
-          <div className="link-background">
+        <h3 className="title-three">Are You Garbage</h3>
+        <h4 className="subtitle">Show available on</h4>
+          <div>
             <a target="_blank" href="https://www.patreon.com/AreYouGarbage">
               <figure>
                 <span>
@@ -87,7 +141,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="fire"></section>
+      <Footer />
     </>
   );
 };
