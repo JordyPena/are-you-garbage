@@ -53,7 +53,6 @@ iframe {
   margin: 20px 0 0 0;
   align-items: center;
   background-color: black;
-  box-shadow: rgb(17 17 26 / 10%) 0px 4px 16px, rgb(17 17 26 / 10%) 0px 8px 24px, rgb(17 17 26 / 10%) 0px 16px 56px;
 }
 
 .platform-link-container a {

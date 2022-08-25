@@ -30,7 +30,7 @@ const Home = () => {
           height="350"
           width="350"
         ></iframe>
-        <div className="wave">
+        <div id="wave" className="wave">
           <svg
             data-name="Layer 1"
             xmlns="http://www.w3.org/2000/svg"
@@ -44,7 +44,7 @@ const Home = () => {
           </svg>
         </div>
       </section>
-      <section className="live-shows-container">
+      <section id="blur" className="live-shows-container">
         <h2 className="title-two">See Are You Garbage Live!</h2>
         <h4 className="disclosure-text">
           Dates are subject to change & venue website may not have listed dates
@@ -56,7 +56,7 @@ const Home = () => {
               <div className="card-top-section">
                 <h4 className="venue">{show.venue}</h4>
                 <div className="venue-location-row">
-                  <p className="city">{show.city},</p>
+                  <p className="city">{show.city}/</p>
                   <p className="state">{show.state}</p>
                 </div>
                 <div className="show-date-row">

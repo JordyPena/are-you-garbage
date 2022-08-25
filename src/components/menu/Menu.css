@@ -26,7 +26,7 @@
 .nav-menu {
   background-color: rgba(0, 0, 0);
   width: 100%;
-  height: 80vh;
+  height: 66vh;
   position: absolute;
   top: 83px;
   left: -100%;
@@ -38,6 +38,7 @@
   left: 0;
   transition: 0ms;
   box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%);
+  z-index: 999;
 }
 
 .nav-img {
@@ -52,6 +53,7 @@
   margin-top: -6px;
   list-style: none;
   padding: 0;
+  z-index: 999;
 }
 
 .nav-menu-items li {
@@ -152,4 +154,10 @@ a {
   padding-top: 30px;
   height: 100px;
   width: 100px;
+}
+
+@media only screen and (max-width: 376px) and (min-width: 300px) {
+  .nav-menu {
+    height: 85vh;
+  }
 }

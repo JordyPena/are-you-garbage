@@ -1,6 +1,7 @@
 footer {
   display: flex;
   flex-direction: column;
+  background-color: black;
 }
 
 footer, a {
@@ -10,18 +11,24 @@ footer, a {
 
 .footer-icons {
   font-size: 20px;
+  color: white;
 }
 
 .footer-text {
   font-size: 14px;
   margin: 0;
+  color: white;
 }
 
 .footer-icons:hover, .footer-text:hover {
   color: rgb(255, 208, 0);
 }
 
-.footer-icons:active, .footer-text:active {
+.media-icons:hover {
+  color: rgb(255, 208, 0);
+}
+
+.footer-icons:active, .footer-text:active, .media-icons:active {
   color: rgba(255, 255, 255, 0.582);
 }
 
@@ -50,4 +57,29 @@ footer, a {
 .media-icons {
   font-size: 25px;
   padding-right: 20px;
+  color: white;
+}
+
+@media only screen and (min-width: 391px) and (max-width: 830px) {
+  .media-icons {
+    font-size: 30px;
+  }
+
+  .copyright-styles {
+    font-size: 15px;
+  }
+
+  .footer-icons {
+    font-size: 40px;
+  }
+
+  .footer-text {
+    font-size: 20px;
+  }
+
+  footer, a {
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+  }
 }
