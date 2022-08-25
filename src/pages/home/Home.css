@@ -65,7 +65,7 @@ iframe {
 
 .wave {
   position: absolute;
-  top: 554px;
+  top: 553px;
   left: 0;
   width: 100%;
   overflow: hidden;
@@ -157,4 +157,44 @@ iframe {
   color: white;
   padding: 5px 10px 5px 10px;
   font-size: 20px;
+}
+/* Tablets */
+@media only screen and (min-width: 391px) and (max-width: 830px) {
+  .wave {
+    top: 559px;
+    margin: 10px 0 5px 0;
+  }
+
+  .title-two {
+    font-size: 30px;
+  }
+
+  .disclosure-text {
+    font-size: 12px;
+  }
+
+  .liveshows-card-container {
+    width: 80%;
+  }
+
+  .card-bottom-btn-styles {
+    width: 30%;
+  }
+
+  .title-three {
+    font-size: 30px;
+  }
+
+  .platform-link-container a {
+    width: 50%;
+    padding: 15px;
+  }
+
+  .platform-link-container figure {
+    margin: 0;
+  }
+
+  .tablet-row {
+    display: flex;
+  }
 }

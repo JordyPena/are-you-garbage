@@ -39,6 +39,7 @@
   transition: 0ms;
   box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%);
   z-index: 999;
+  border: 2px solid white;
 }
 
 .nav-img {
@@ -155,9 +156,26 @@ a {
   height: 100px;
   width: 100px;
 }
-
+/* Smaller phones ie SE */
 @media only screen and (max-width: 376px) and (min-width: 300px) {
   .nav-menu {
     height: 85vh;
+  }
+}
+/* Tablets */
+@media only screen and (min-width: 391px) and (max-width: 830px) {
+  .nav-menu {
+    height: 12vh;
+  }
+
+  .nav-menu-items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .nav-menu-img {
+    padding-left: 10px;
+    padding-top: 10px;
   }
 }

@@ -84,7 +84,7 @@ const Home = () => {
         <div className="platform-link-container">
         <h3 className="title-three">Are You Garbage</h3>
         <h4 className="subtitle">Show available on</h4>
-          <div>
+          <div className="tablet-row">
             <a target="_blank" href="https://www.patreon.com/AreYouGarbage">
               <figure>
                 <span>
