@@ -1,17 +1,9 @@
 .navbar {
-  background-color: #fff;
-  max-height: 100px;
   display: flex;
-  flex-shrink: 0;
-  min-height: 5.25rem;
-  align-items: stretch;
-  width: 100%;
-  box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%),
-    0 0 0 1px rgb(10 10 10 / 2%);
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
-.left-container {
+.ayg-banner {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -26,9 +18,9 @@
 .nav-menu {
   background-color: rgba(0, 0, 0);
   width: 100%;
-  height: 66vh;
+  height: 100%;
   position: absolute;
-  top: 83px;
+  top: 67px;
   left: -100%;
   transition: 0ms;
   z-index: 999;
@@ -37,12 +29,10 @@
 .nav-menu.active {
   left: 0;
   transition: 0ms;
-  box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%);
   z-index: 999;
-  border: 2px solid white;
 }
 
-.nav-img {
+.ayg-banner-img {
   width: 100%;
   height: 100%;
 }
@@ -120,22 +110,23 @@
   align-items: center;
 }
 
-.menu-bars {
+.menu-bar-hamburger-container {
   display: flex;
   align-items: center;
-  margin-left: 0rem;
-  font-size: 2rem;
-  background: none;
-  background-color: rgba(255, 208, 0, 0.712);
-  padding-right: 15px;
-}
-
-.menu-bars:hover {
-  cursor: pointer;
-}
-
-.menu-bars-icon:hover {
+  font-size: 3rem;
   color: black;
+}
+
+.menu-bar-x-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 3rem;
+  color: white;
+}
+
+.menu-bar-hamburger-icon:hover, .menu-bar-x-icon:hover {
+  cursor: pointer;
 }
 
 .link-style,
@@ -152,18 +143,40 @@ a {
 }
 
 .nav-menu-img {
-  padding-top: 30px;
   height: 100px;
   width: 100px;
 }
-/* Smaller phones ie SE */
-@media only screen and (max-width: 376px) and (min-width: 300px) {
+
+/* Tablets */
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
   .nav-menu {
-    height: 85vh;
+    height: 60%;
+    top: 136px;
+  }
+
+  .nav-menu-img {
+    padding-left: 10px;
+    padding-top: 10px;
+  }
+
+  .nav-menu-items {
+    margin: unset;
   }
 }
-/* Tablets */
-@media only screen and (min-width: 391px) and (max-width: 830px) {
+/* Desktop */
+@media only screen and (min-width: 1000px) and (max-width: 1900px) {
+  .left-container {
+    width: 100%;
+  }
+
+  .navbar {
+    min-height: 14.25rem;
+  }
+
+  .nav-menu {
+    top: 228px;
+  }
+
   .nav-menu {
     height: 12vh;
   }
@@ -172,6 +185,7 @@ a {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-evenly;
   }
 
   .nav-menu-img {

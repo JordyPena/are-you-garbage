@@ -1,13 +1,68 @@
 .shows-card-container {
-  height: 100%;
-  width: 100%;
-  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.shows-card-container {
+  width: 90%;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.726);
   box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
 }
 
-.logo {
-  padding-top: 10px;
-  height: 50%;
+.shows-card-top-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.shows-venue-header {
+  font-size: 25px;
+  margin: 10px 0 10px 0;
+  color: black;
+}
+
+.shows-venue-location-row {
+  display: flex;
+}
+
+.shows-city, .shows-state {
+  font-size: 25px;
+  margin: 0;
+}
+
+.shows-date-row {
+  display: flex;
+}
+
+.shows-date-text {
+  font-size: 25px;
+  margin: 5px;
+  color: black;
+}
+
+.shows-buy-tickets {
+  background-color: darkgrey;
+  border: none;
+  font-size: 15px;
+  border-radius: 5px;
+  padding: 5px 10px 5px 10px;
+  margin-bottom: 5px;
+}
+
+.shows-buy-tickets:hover {
+  background-color: #dfb98e65;
+}
+
+.shows-logo {
+  margin-top: 10px;
+}
+/* Tablets */
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
+  
+}
+/* Desktop */
+@media only screen and (min-width: 1000px) and (max-width: 1900px) {
+
 }

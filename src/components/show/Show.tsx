@@ -3,23 +3,23 @@ const Shows = ({ show }: any) => {
   const { venue, city, state, dddd, month, dd, url } = show;
   return (
     <div className="shows-card-container">
-      <div className="card-top-section">
+      <div className="shows-card-top-section">
         <img
           src={`${process.env.PUBLIC_URL}/images/logo.jpg`}
-          className="logo"
+          className="shows-logo"
           alt="AYG"
         />
-        <h4 className="venue">{venue}</h4>
-        <div className="venue-location-row">
-          <p className="city">{city}/</p>
-          <p className="state">{state}</p>
+        <h4 className="shows-venue-header">{venue}</h4>
+        <div className="shows-venue-location-row">
+          <p className="shows-city">{city}/</p>
+          <p className="shows-state">{state}</p>
         </div>
-        <div className="show-date-row">
-          <p className="show-date-text">{dddd}</p>
-          <p className="show-date-text">{month}</p>
-          <p className="show-date-text">{dd}</p>
+        <div className="shows-date-row">
+          <p className="shows-date-text">{dddd}</p>
+          <p className="shows-date-text">{month}</p>
+          <p className="shows-date-text">{dd}</p>
         </div>
-        <a className="buy-tickets" href={url} target="_blank">
+        <a className="shows-buy-tickets" href={url} target="_blank" rel="noreferrer">
           Buy Tickets
         </a>
       </div>

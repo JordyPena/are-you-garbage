@@ -18,25 +18,24 @@ const Menu = () => {
   }, [sidebar]);
   return (
     <>
+      <div className="ayg-banner">
+        <img
+          src={`${process.env.PUBLIC_URL}/images/banner.jpg`}
+          className="ayg-banner-img"
+          alt="two guys"
+        />
+      </div>
       <div className="navbar">
-        <div className="left-container">
-          <img
-            src={`${process.env.PUBLIC_URL}/images/banner.jpg`}
-            className="nav-img"
-            alt="two guys"
-          />
-        </div>
-        {!sidebar ? (
-          <Link to="#" className="menu-bars" onClick={showSidebar}>
-            <HiMenu className="menu-bars-icon" />
-          </Link>
-        ) : (
-          <Link to="#" className="menu-bars" onClick={showSidebar}>
-            <AiOutlineClose className="menu-bars-icon" />
+        {!sidebar && (
+          <Link to="#" className="menu-bar-hamburger-container" onClick={showSidebar}>
+            <HiMenu className="menu-bar-hamburger-icon" />
           </Link>
         )}
       </div>
       <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
+        <Link to="#" className="menu-bar-x-container" onClick={showSidebar}>
+          <AiOutlineClose className="menu-bar-x-icon" />
+        </Link>
         <ul className="nav-menu-items">
           <li>
             <img
@@ -58,7 +57,11 @@ const Menu = () => {
             </Link>
           </li>
           <li className="nav-text" onClick={showSidebar}>
-            <a target="_blank" href="https://www.patreon.com/AreYouGarbage">
+            <a
+              target="_blank"
+              href="https://www.patreon.com/AreYouGarbage"
+              rel="noreferrer"
+            >
               <FaPatreon className="link-style" />{" "}
               <p className="dark-mode-style">Patreon</p>
             </a>
@@ -67,6 +70,7 @@ const Menu = () => {
             <a
               target="_blank"
               href="https://www.youtube.com/c/AreYouGarbageComedyPodcast/featured"
+              rel="noreferrer"
             >
               <FaYoutube className="link-style" />{" "}
               <p className="dark-mode-style">Episodes</p>
@@ -76,6 +80,7 @@ const Menu = () => {
             <a
               target="_blank"
               href="https://www.bonfire.com/store/are-you-garbage/"
+              rel="noreferrer"
             >
               <FaTshirt className="link-style" />{" "}
               <p className="dark-mode-style">Merch</p>
