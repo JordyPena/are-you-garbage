@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/home/Home';
 import LiveShows from './pages/live-shows/LiveShows';
-import Special from './pages/live-shows/LiveShows';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(
@@ -15,7 +14,6 @@ root.render(
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/liveShows" element={<LiveShows/>}/>
-        <Route path="/special" element={<Special/>}/>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

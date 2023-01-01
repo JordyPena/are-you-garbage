@@ -1,19 +1,17 @@
 iframe {
   border: none;
-  border-radius: 30px;
-  padding-top: 50px;
+  border-radius: 15px;
 }
 
 .iframe-Container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: black;
 }
 
 .title {
-  color: #DFB98E;
-  margin: 30px 0 0 0;
+  color: black;
+  margin: 10px 0 10px 0;
   font-size: 35px;
 }
 
@@ -26,7 +24,7 @@ iframe {
 .title-two {
   color: black;
   font-size: 25px;
-  margin: 170px 0 0 0;
+  margin-top: 30px;
   
 }
 
@@ -50,10 +48,11 @@ iframe {
 .platform-link-container {
   display: flex;
   flex-direction: column;
-  margin: 20px 0 0 0;
+  margin: 20px 0 20px 0;
   align-items: center;
   background-color: black;
-  box-shadow: rgb(17 17 26 / 10%) 0px 4px 16px, rgb(17 17 26 / 10%) 0px 8px 24px, rgb(17 17 26 / 10%) 0px 16px 56px;
+  width: 90%;
+  border-radius: 10px;
 }
 
 .platform-link-container a {
@@ -66,7 +65,7 @@ iframe {
 
 .wave {
   position: absolute;
-  top: 554px;
+  top: 553px;
   left: 0;
   width: 100%;
   overflow: hidden;
@@ -85,7 +84,9 @@ iframe {
 }
 
 .disclosure-text {
-  font-size: 10px;
+  font-size: 12px;
+  width: 90%;
+  margin: 0 0 20px 0;
 }
 
 .live-shows-container {
@@ -96,7 +97,6 @@ iframe {
 
 .liveshows-card-container {
   width: 90%;
-  height: 640px;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.726);
   box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
@@ -148,7 +148,7 @@ iframe {
 .card-bottom {
   display: flex;
   justify-content: center;
-  margin: 30px 0 0 0;
+  margin: 20px 0 10px 0;
 }
 
 .card-bottom-btn-styles {
@@ -158,4 +158,167 @@ iframe {
   color: white;
   padding: 5px 10px 5px 10px;
   font-size: 20px;
+}
+/* Tablets */
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
+  .wave {
+    top: 610px;
+    margin: 10px 0 5px 0;
+  }
+
+  .title-two {
+    font-size: 30px;
+  }
+
+  .disclosure-text {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .liveshows-card-container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .shows {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .card-bottom-btn-styles {
+    width: 30%;
+  }
+
+  .title-three {
+    font-size: 30px;
+  }
+
+  .platform-link-container {
+    width: 80%;
+  }
+
+  .platform-link-container a {
+    width: 50%;
+    padding: 15px;
+  }
+
+  .platform-link-container figure {
+    margin: 0;
+  }
+
+  .tablet-row {
+    display: flex;
+  }
+
+  iframe {
+    height: 400px;
+    width: 700px;
+  }
+  
+  .card-top-section {
+    width: 40%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 5px;
+    margin: 10px 0 5px 0;
+  }
+
+  .venue {
+    font-size: 22px;
+  }
+
+  .city, .state, .show-date-text {
+    font-size: 20px;
+  }
+
+  .buy-tickets {
+    margin-bottom: 5px;
+  }
+}
+/* Desktop */
+@media only screen and (min-width: 1000px) and (max-width: 1900px) {
+  .title {
+    font-size: 80px;
+  }
+
+  .wave {
+    top: 1199px;
+  }
+
+  .wave svg {
+    height: 270px;
+  }
+
+  .title-two {
+    font-size: 50px;
+  }
+
+  .disclosure-text {
+    font-size: 15px;
+  }
+
+  .liveshows-card-container {
+    height: 470px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: initial;
+  }
+
+  .card-bottom-btn-styles {
+    width: 10%;
+  }
+
+  .title-three {
+    font-size: 30px;
+  }
+
+  .platform-link-container a {
+    width: 50%;
+    padding: 15px;
+  }
+
+  .platform-link-container figure {
+    margin: 0;
+  }
+
+  .tablet-row {
+    display: flex;
+  }
+
+  .venue {
+    font-size: 30px;
+    margin: 0 0 0 20px;
+  }
+
+  .city, .state {
+    font-size: 30px;
+  }
+
+  .show-date-text {
+    font-size: 20px;
+  }
+
+  .card-top-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .buy-tickets {
+    font-size: 20px;
+    margin: 0 20px 0 0;
+  }
+
+  .show-date-row {
+    margin: 0 20px 0 20px;
+  }
+
+  .venue-location-row {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+  }
 }
